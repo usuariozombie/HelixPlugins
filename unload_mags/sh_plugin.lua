@@ -1,10 +1,6 @@
-PLUGIN.name = "Unload mags"
+PLUGIN.name = "Unload Ammo"
 PLUGIN.author = "Hikka"
-PLUGIN.desc = "Unload mags for weapons."
-
-ix.lang.AddTable("russian", {
- 	['Unload mags'] = "Разгрузить обойму"
-})
+PLUGIN.desc = "It allows you to unload ammo from your weapons."
 
 local cache_ammo = {}
 
@@ -47,7 +43,7 @@ function PLUGIN:InitializedPlugins()
 			end
 		elseif v.isWeapon and not v.isGrenade then
 			v.functions.unloadAmmo = {
-				name = "Descargar arma",
+				name = "Unload Ammo",
 				tip = "unloadAmmoTip",
 				icon = "icon16/bullet_wrench.png",
 				OnRun = function(item)
