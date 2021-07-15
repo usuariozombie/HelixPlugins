@@ -1,5 +1,5 @@
 PLUGIN.name = "Attribute System"
-PLUGIN.author = "Hoooldini"
+PLUGIN.author = "Hoooldini, edited by Usuariozombie"
 PLUGIN.description = "Implementation of an attribute system for roleplay."
 
 ix.util.Include("sh_schema.lua")
